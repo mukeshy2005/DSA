@@ -20,8 +20,10 @@ int main(){
     cout << *p << endl; // va;ue of a
 
     // to acces the heap memory 
-    // using c++
+    // using c
     // we use malloc
     int *q;
     q=(int*)malloc(5*sizeof(int)); // 5*4=20 bytes
-}
+    // the inter is created in the heap memory and taking 20 bytes
+} /*using c++
+   p=new int[5]*/
