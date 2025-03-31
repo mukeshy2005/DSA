@@ -20,16 +20,34 @@
 
   /* above thing is bad practice  */
   // i am writig the new code again below
+
+  /* 
  import java.util.*;// import the Scanner class from java.util package
   public class Input{
     public static void main(String args[]){
      Scanner sc= new Scanner(System.in);
     /*  int input1=sc.nextInt();
      System.out.println(input1);
-     sc.close(); */
+     sc.close(); 
      // lets use another method to take input other data types 
      double input2=sc.nextDouble();
      System.out.println(input2);
      sc.close();
     }
   }
+  */
+
+  import java.util.*;// import the Scanner class from java.util package
+  public class Input{
+    public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      // lets calculate sum of two numbers
+      int number1 = sc.nextInt();
+      int number2 = sc.nextInt();
+      int sum = number1+number2;
+      System.out.println(sum);
+      sc.close();
+    }
+  }
+
+
