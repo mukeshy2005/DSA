@@ -1,9 +1,11 @@
 import java.util.*;
 public class TypeCasting{
     public static void main(String args[]){
-    int a=10;
-    long b=a;
-    System.out.println(b); // implicit type casting
-    // implicit type casting means converting a smaller data type to a larger data type
+    Scanner sc= new Scanner (System.in);
+    // lets take two numbers as input from user
+    float a= sc.nextFloat();
+   // int b=a; // thi wll give error because we are trying to convert a larger data type to a smaller data type lossing data
+     int b=(int)a; // explicit type casting is done manually by the programmer
+     System.out.println(b);
     }
 }
