@@ -1,3 +1,4 @@
+import java.util.*;
 public class pattern{
     // creating a function 
     public static void pattern(int row , int col){
@@ -19,7 +20,7 @@ public class pattern{
         //outer loop
         for(int i=1;i<=n;i++ ){
             // inner loop 
-            for(int j=1;j<n-i;j++){
+            for(int j=1;j<=n-i;j++){
                 System.out.print(" ");
 
             }
@@ -30,9 +31,45 @@ public class pattern{
         }
            
     }
+    public static void array(){
+    Scanner sc = new Scanner(System.in);
+    int A[]=new int[10];
+    System.out.println(" enter marks");
+    A[0]=23;
+    A[1]=sc.nextInt();
+    A[2]=sc.nextInt();
+      
+    System.out.println(A[0]);
+    System.out.println(A[1]);   
+    System.out.println(A[2]);
+    
+A[0]=23+2;
+System.out.println(A[0]);
+
+
+
+    }
+
+    public static void update(int marks[]){
+      for(int i=0;i<marks.length;i++){
+        marks[i]=marks[i]+1;
+      }
+    
+    }
 
     public static void main(String args[]){
+       int marks[]={92,93,99};
+       update(marks);
+       for(int i=0;i<marks.length;i++){
+        marks[i]=marks[i]+1;
+        System.out.println(marks[i]+" ");
+      }
+      System.out.println();
+      
+        
     // pattern(8,15);
-    invPyramid(5);
+    // invPyramid(5);
+    // array();
     }
+
 }
