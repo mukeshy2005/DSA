@@ -11,7 +11,7 @@ public class getLargest {
         }
         return largest;
     }
-
+// binary search 
     public static int searchKey(int number[], int key) {
         int start = 0, end = number.length - 1;
         while (start <= end) {
